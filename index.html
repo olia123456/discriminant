@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Discriinant</title>
+  </head>
+  <body>
+    <div class="contaner">
+        <h1 class="heder">Программа для решения квадратных уравнений</h1>
+        <p class="paragraf">Разработчик учащийся 8 класса СШ № 13 грода Слуцка Сытин Иван</p>
+    <div class="content">
+        <pre>
+        Исходный код программы на языке Pyton
+        import math
+        def des (a,b,c):   
+            d=b**2-4*a*c
+        if d<0: 
+            print("нет решения")
+            return None
+        if d==0:
+            x1=(b/2*a)
+            x2=(b/2*a)
+        d=math.sqrt(d)
+        x1=(-b-d)/2/a
+        x2=(-b+d)/2/a    
+        return [x1,x2]
+        </pre>
+        <div class="in-block">
+            <h2>Решение уравнений</h2>
+            <ol>
+                <li>Введите коэффициенты при переменных.</li>
+                <li>Для вычисления корней нажмите кнопку.</li>
+            </ol>            
+            <input type="text" placeholder="a=" class="in" id="a" />
+            <input type="text" placeholder="b=" class="in" id="b" />
+            <input type="text" placeholder="c=" class="in" id="c" />
+            <button type="button" class="calc-btn" id="calculate">Calculate</button>
+            <h2 class="title"></h2>
+        </div>
+    </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

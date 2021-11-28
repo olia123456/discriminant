@@ -1,0 +1,29 @@
+body {
+  box-sizing: border-box;
+}
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+.contaner {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.heder {
+  text-align: center;
+}
+.paragraf {
+  text-align: center;
+}
+.in {
+  width: 40px;
+}
+.calc-btn {
+  color: cyan;
+  background-color: darkblue;
+}
+li {
+  padding-left: 0px;
+  margin-left: 0px;
+}
